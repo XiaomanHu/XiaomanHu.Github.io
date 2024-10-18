@@ -3608,8 +3608,12 @@ input, select, textarea {
 
 		}
 .dropdown {
-  position: absolute;
+  position: relative;
   display: inline-block;
+font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
 }
 
 .dropdown-content {
