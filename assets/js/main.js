@@ -93,3 +93,22 @@
 			});
 
 })(jQuery);
+
+<script>
+  const designsLink = document.getElementById('designs-link');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  designsLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default link behavior
+    dropdownContent.classList.toggle('show');
+  });
+
+  // Close dropdown if clicked outside
+  window.onclick = function(event) {
+    if (!event.target.matches('#designs-link')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+      }
+    }
+  };
+</script>
