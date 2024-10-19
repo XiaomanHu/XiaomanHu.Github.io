@@ -3630,6 +3630,11 @@ input, select, textarea {
     font-weight: inherit;
     color: inherit;
 }
+span {
+    font-size: inherit; /* Or set a default size */
+    font-family: inherit;
+    font-weight: inherit;
+}
 	
 .dropdown:hover .dropdown-content {
   display: block;
